@@ -1,0 +1,13 @@
+{
+  "name":"digital-rolodex",
+  "description": "digital-rolodex built with generator-react-firebase",
+  "repository": "https://github.com/epylinkn/digital-rolodex",
+  "keywords": [
+    "generator-react-firebase",
+    "react",
+    "redux",
+    "firebase",
+    "redux-firebase",
+    "react-redux-firebase",
+  ]
+}

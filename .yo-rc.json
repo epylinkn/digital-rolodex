@@ -1,0 +1,13 @@
+{
+  "generator-react-firebase": {
+    "promptValues": {
+      "githubUser": "epylinkn",
+      "firebaseName": "digital-rolodex",
+      "firebaseKey": "AIzaSyCCOSTQhoLZgeWTl3xRz_sSRIiPTfOGW5Q",
+      "includeRedux": true,
+      "includeFirestore": true,
+      "otherFeatures": [],
+      "deployTo": "heroku"
+    }
+  }
+}
