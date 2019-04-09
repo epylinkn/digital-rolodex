@@ -4,6 +4,7 @@ import { isEmpty } from 'react-redux-firebase/lib/helpers'
 import { Route, Switch } from 'react-router-dom'
 import ContactRoute from 'routes/Contacts/routes/Contact'
 import ContactTile from '../ContactTile'
+import ContactPanel from '../ContactPanel'
 import NewContactTile from '../NewContactTile'
 import NewContactDialog from '../NewContactDialog'
 import { renderChildren } from 'utils/router'
@@ -39,12 +40,20 @@ function ContactsPage({
               <NewContactTile onClick={toggleDialog} />
               {!isEmpty(contacts) &&
                 contacts.map((contact, ind) => (
-                  <ContactTile
+                  <ContactPanel
                     key={`Contact-${contact.id}-${ind}`}
                     name={contact.name}
+                    age={contact.age}
                     onSelect={() => goToContact(contact.id)}
                     onDelete={() => deleteContact(contact.id)}
                   />
+                  // <ContactTile
+                  //   key={`Contact-${contact.id}-${ind}`}
+                  //   name={contact.name}
+                  //   age={contact.age}
+                  //   onSelect={() => goToContact(contact.id)}
+                  //   onDelete={() => deleteContact(contact.id)}
+                  // />
                 ))}
             </div>
           </div>

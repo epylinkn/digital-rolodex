@@ -10,6 +10,7 @@ export default theme => ({
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    '-webkit-flex-flow': 'row wrap'
+    '-webkit-flex-flow': 'row wrap',
+    minWidth: '60%'
   }
 })

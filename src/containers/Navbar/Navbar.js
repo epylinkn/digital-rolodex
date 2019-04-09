@@ -23,12 +23,12 @@ function Navbar({
     <AppBar position="static">
       <Toolbar>
         <Typography
-          variant="h6"
+          variant="h4"
           color="inherit"
           className={classes.flex}
           component={Link}
           to={authExists ? LIST_PATH : '/'}>
-          digital-rolodex
+          TwoHandTouch.me
         </Typography>
         {authExists ? (
           <AccountMenu

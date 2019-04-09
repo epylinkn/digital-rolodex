@@ -11,7 +11,7 @@ import { required } from 'utils/form'
 
 function NewContactDialog({ classes, handleSubmit, open, onRequestClose }) {
   return (
-    <Dialog open={open} onClose={onRequestClose}>
+    <Dialog open={open} onClose={onRequestClose} fullWidth={true} maxWidth="sm">
       <DialogTitle id="new-contact-dialog-title">New Contact</DialogTitle>
       <form onSubmit={handleSubmit} className={classes.inputs}>
         <DialogContent>
@@ -19,6 +19,15 @@ function NewContactDialog({ classes, handleSubmit, open, onRequestClose }) {
             name="name"
             component={TextField}
             label="Contact Name"
+            validate={[required]}
+          />
+          <br/>
+          <br/>
+          <Field
+            type="number"
+            name="age"
+            label="Age"
+            component={TextField}
             validate={[required]}
           />
         </DialogContent>
